@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(to left, black, rgb(32, 32, 32), rgb(0, 0, 0));
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 8px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 50px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input {
+    width: 50%;
+}
+
+.form button {
+    width: 15%;
+}
