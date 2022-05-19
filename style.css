@@ -15,7 +15,7 @@ a {
 }
 
 body {
-    background-image: linear-gradient(to left, black, rgb(32, 32, 32), rgb(0, 0, 0));
+    background-image: linear-gradient(to left, black, rgb(70, 70, 70), rgb(0, 0, 0));
     background-size: 500% 100%;
     animation: degrade-animado 5s infinite alternate;
 }
@@ -33,7 +33,9 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 10px;
     padding: 10px;
+    border: 1px solid;
 }
 
 header ul {
@@ -46,6 +48,7 @@ header ul li {
 
 .container {
     text-align: center;
+    padding-top: 80px;
 }
 
 .container .name h1 {
@@ -55,6 +58,7 @@ header ul li {
 .container .name h5 {
     font-size: 25px;
     font-weight: 400;
+    padding-bottom: 10px;
 }
 
 #about p {
@@ -64,7 +68,7 @@ header ul li {
 
 .form {
     width: 40%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .form input {
