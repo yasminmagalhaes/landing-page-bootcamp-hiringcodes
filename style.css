@@ -46,6 +46,14 @@ header ul li {
     padding: 8px;
 }
 
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: #acacac;
+}
+
 .container {
     text-align: center;
     padding-top: 80px;
@@ -61,6 +69,35 @@ header ul li {
     padding-bottom: 10px;
 }
 
+.arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(4, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#about {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
 #about p {
     max-width: 600px;
     margin: 0 auto;
@@ -73,8 +110,49 @@ header ul li {
 
 .form input {
     width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
 }
 
 .form button {
     width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #888888 50%, #d6d6d6 50%);
+    background-size: 200%, 100%;
+    background-position: right bottom;
+    color: #181717;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+    border-radius: 0 5px 5px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 900px) {
+    .form {
+        width: 100%;
+    }
+        #about p {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 38px;
+    }
+
+    .container .name h5 {
+        font-size: 24px;
+    }
+
+
 }
